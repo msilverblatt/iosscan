@@ -1,0 +1,12 @@
+#! /bin/sh
+
+set -e
+if [ $1 ]; then
+	if [ $1 == '-h' ]; then
+		python -u scan.py -h
+	else
+		mitmdump -v -v | python -u scan.py "$@"
+	fi
+else
+	mitmdump -v -v | python -u scan.py
+fi

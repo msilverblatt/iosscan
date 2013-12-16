@@ -1,0 +1,11 @@
+iosscan
+By Michael Silverblatt
+Developed for Comp 116, Tufts University Fall '13
+Professor Ming Chow
+
+This is an implementation of a scanner for iOS traffic. It summarizes the traffic it has scanned and displays it on the terminal.
+The various options it can be run with can be see by running './iosscan -h'.
+
+privacy.pdf is the paper this project accompanied.
+
+Must install mitmproxy certificate on iOS device before running. Connect computer and device to same WiFi network and set proxy to computer's IP. Requires mitmdump to run. Developed and tested on python v. 2.7, not guaranteed to work on any other versions.
